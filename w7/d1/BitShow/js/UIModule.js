@@ -39,9 +39,9 @@
         })
     }
 
-    function showImg(show){
+    function showImg(showImg){
         let imgDiv = $("#img-container");
-        let bigImg = `<img src="${show.image.original}">`;
+        let bigImg = `<img src="${showImg.image.original}">`;
         imgDiv.html(bigImg);
     }
 
