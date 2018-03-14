@@ -20,8 +20,8 @@ const generatePosts = function(num){
         const title = generateTitle();
         const lead = generateLead();
 
-        const post = new Post(title,lead);
-        posts.push(post);
+        const posting = new Post(title,lead);
+        posts.push(posting);
     }
     return posts;
 }
