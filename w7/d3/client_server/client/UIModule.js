@@ -1,19 +1,16 @@
-const displayBlogList = (blogList) => {
-    blogList.forEach(element => {
+const displayBlogs = (blogs) => {
+
+    blogs.forEach(element => {
+        
         var d = $("<div>");
+       
         var h = $("<h5>");
-        var p = $("<p>");
+        var p = $("<p><br><hr>");
         $(h).text(element.title);
         $(p).text(element.lead);
         $(d).append(h);
         $(d).append(p);
-        $(container).append(d)
-    }
-}
-var header = $("#header");
-function printAllTexts(arr) {
-    arr.forEach( (el) => {
-        let printDiv = `<div class="text-container"><h2>${el.title}</h2><p>${el.lead}</p></div>`
+        $("#main").append(d);
     });
-}
-console.log(arr);
+    
+    }
