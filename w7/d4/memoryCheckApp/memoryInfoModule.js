@@ -5,7 +5,7 @@ const myInterval = setInterval(() => {
 
     const currentFreeMem = os.freemem() / 1024 / 1024;
 
-    if (currentFreeMem < 1500) {
+    if (currentFreeMem < 5000) {
         currentCallback(`ALERT!!! Only free memory is :${currentFreeMem} GB`);
     }
     console.log(currentFreeMem);
