@@ -3,6 +3,7 @@ import Header from './app/partials/Header';
 import UserGrid from './users/UserGrid';
 import { userService } from './users/userService';
 import Footer from './app/partials/Footer';
+// import newMail from './shared/utils/formatMail'
 // import newDate from './shared/utils/formatDate'
 // import users from './users/users';
 
