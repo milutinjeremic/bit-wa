@@ -10,7 +10,7 @@ const UserItem = (props) => {
         <ul className="collection">
             <div className="collection-item avatar" style={bgColor}>
                 <img src={props.user.smallPhoto} alt="" className="circle" />
-                <p className="title">{props.user.firstName} {props.user.lastName}</p>
+                <p className="title">{props.user.name}</p>
                 <span className="title"><i className="material-icons">email</i>: {props.user.email} <br />
                 </span>
                 <p><i className="material-icons">cake</i>{props.user.bDay}</p>

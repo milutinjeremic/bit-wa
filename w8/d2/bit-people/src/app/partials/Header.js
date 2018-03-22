@@ -6,20 +6,21 @@ const Header = (props) => {
     return (
         <nav>
             <div className="nav-wrapper">
-                <h1 className="brand-logo center">{props.title}</h1>
+                <h1 className="brand-logo center"><Link to='/'>{props.title}</Link></h1>
                 <ul className="right hide-on-med-and-down">
                     <li><Link to='/About'>About</Link></li>
                     <li><a onClick={props.handleRefresh}><i className="material-icons">refresh</i></a></li>
                     <li><a onClick={props.handleToggle}><i className="material-icons">{props.showList ? "view_list" : "view_module"}</i></a></li>
-                 
                 </ul>
             </div>
         </nav>
     )
 }
+
 Header.propTypes = {
     title: PropTypes.string.isRequired
 }
+
 export default Header;
 
 
