@@ -17,7 +17,7 @@ class Home extends Component {
 			filteredUsers: [],
 			showGrid: false,
 			inputValue: "",
-			noMatch: false
+			noMatch: true
 		}
 	}
 
