@@ -9,7 +9,7 @@ const Header = () => {
                     <a className="brand-logo"> BIT BLOG</a>
                     <ul className="right hide-on-med-and-down">
                         <li><Link to='/Home'>Home</Link></li>
-                        <li><Link to='/Authors' >Authors</Link></li>
+                        <li><Link to='/AuthorsPage' >Authors</Link></li>
                         <li><Link to='/AboutPage' >About</Link></li>
                     </ul>
                 </div>

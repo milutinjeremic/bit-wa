@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "materialize-css": "^1.0.0-beta",
+    "nodemon": "^1.17.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",

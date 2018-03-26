@@ -1,27 +1,42 @@
 import React, { Component } from 'react';
 import PostList from '../posts/postList';
-import PostItem from '../postItem/postItem';
-import Authors from '../authors/authors';
-import {Link} from 'react-router-dom';
+
+
+import { postService } from '../PostService';
+
 
 class Home extends Component {
-  constructor(props) {
-    super(props)
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			posts: [],
+			
+			
+		}
+		
+	}
+	
+	componentDidMount() {
+		postService.fetchPosts()
+		.then((response) => {
+			this.setState({
+				posts: response
+			})
+			
+	})
+
+}
 
 
-  }
 
-  componentDidMount() {
-    console.log("component did mount");
-
-  }
-
-  render() {
-    return (
-      <div>
-        <PostList/>
-      </div>
-    )
-  }
+render() {
+	return (
+		<div>
+			<PostList posts={this.state.posts}/>
+			
+		</div>
+	)
+}
 }
 export default Home;
